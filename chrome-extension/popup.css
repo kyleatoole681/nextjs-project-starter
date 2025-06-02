@@ -1,0 +1,219 @@
+/* Modern, clean styling for the extension popup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 360px;
+    font-family: 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1a1a1a;
+}
+
+.container {
+    padding: 16px;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.version {
+    font-size: 12px;
+    color: #666666;
+}
+
+/* Prediction Box */
+.prediction-box {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.prediction-box h2 {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 8px;
+}
+
+.prediction-value {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000000;
+    margin: 8px 0;
+}
+
+.prediction-time {
+    font-size: 12px;
+    color: #666666;
+}
+
+/* Controls Section */
+.controls {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.auto-cashout {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+/* Switch Toggle */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #000000;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+/* Threshold Control */
+.threshold-control {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.threshold-control label {
+    font-size: 14px;
+    color: #666666;
+}
+
+.threshold-control input {
+    width: 80px;
+    padding: 4px 8px;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* History Section */
+.history-section {
+    margin-bottom: 20px;
+}
+
+.history-section h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.history-table {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    font-size: 13px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+th {
+    font-weight: 500;
+    color: #666666;
+    background: #f8f9fa;
+}
+
+td {
+    color: #1a1a1a;
+}
+
+/* Success and Failure indicators in history */
+.success {
+    color: #10B981;
+}
+
+.failure {
+    color: #EF4444;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.refresh-button {
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.refresh-button:hover {
+    background: #333333;
+}
+
+.refresh-button:active {
+    transform: translateY(1px);
+}
