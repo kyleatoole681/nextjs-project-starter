@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background circle -->
+    <circle cx="24" cy="24" r="22" fill="#000000"/>
+    
+    <!-- Stylized "A" for Aviator -->
+    <path d="M24 8L36 38H12L24 8Z" fill="white"/>
+    
+    <!-- Prediction arrow -->
+    <path d="M16 30L24 22L32 30" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
